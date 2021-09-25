@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".NotesListPage">
+
+
+    <TextView
+
+        android:text="All files"
+
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="30dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        />
+
+    <ImageButton
+        android:id="@+id/AllFilesSearchBtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/magnifier"
+        android:scaleType="fitCenter"
+        android:background="#0000ffff"
+        />
+    <EditText
+        android:id="@+id/AllFilesSerachEditText"
+        android:hint="Search"
+        android:textColorHint="#8CA185"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="25dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:visibility="invisible"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/AllNotesListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
